@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Signika+Negative:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Signika Negative', sans-serif;
+    min-height: 100vh;
+    background-color:#f5cf55;
+}
+li, a, button, p{
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/*About style*/
+
+.about .row{
+    min-height:30vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap;
+    padding:2% 6%;
+}
+.about .row .image{
+    flex:1 1 40rem;
+    padding:2rem;
+    
+}
+.about .row .image img{
+    width:100%;
+    height:100%;
+    object-fit:cover ;
+    border-radius:20px;
+}
+.about .row .content{
+    flex: 1 1 40rem;
+    padding:2rem;
+    text-align:center;
+}
+.about .row .content h1{
+    font-size:3rem;
+    color:red;
+    margin-bottom:5rem;
+}
+.about .row .content p{
+         line-height: 1.7;
+         font-size: 1.2rem;
+         margin-bottom:  1.2rem;
+
+}
+/*strat about more infor style*/
+.services{
+    min-height:100vh;
+    text-align: center;
+    padding: 2% 6%;
+}
+.services h1{
+     font-size:3.8rem;
+     padding:0.5rem;
+     display:inline-block;
+     color:purple;
+     border-bottom:.3rem solid purple;
+     margin-bottom:1.8rem;
+}
+
+.services .container{
+       display:flex;
+       justify-content: center;
+       align-items:center;
+       text-align: center;
+       flex-wrap:wrap;
+}
+.services .container .box{
+    width: 26rem;
+    height: 31rem;
+    margin: .5rem;
+    position: relative;
+    overflow: hidden;
+}
+.services .container .box img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.services .container .box .info{
+    position:absolute;
+    top: 50%;
+    left : 50%;
+    transform:translate(-50%,-50%) scale(0);
+    transform-origin: bottom;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+
+}
+.services .container .box:hover .info{
+    transform: translate(-50%, -50%)scale(1);
+}
+
+
+
+
+.services .container .box .info h3{
+    font-size: 3rem;
+    color:yellowgreen;
+    margin-bottom: 1.2rem;
+}
+
+.services .container .box .info p{
+
+    line-height: 2;
+    color:#fff;
+    font-size: 1.1rem;
+    padding:0 1rem;
+    margin-bottom: 1.2rem;
+}
+
+
+
+
+
+/*Registration style*/
+
+
+.back-video{
+
+    position: absolute;
+    right: 100;
+    bottom: 100;
+    z-index: -1;
+    width:100%;
+    
+    
+}
+.signup{
+
+    width:400px;
+    height:720px;
+    margin:auto;
+    background-color:none;
+    border-radius:20px;
+    text-align: center;
+    padding-left: 5px;
+    border:solid 2px white;
+    color: white;
+}
+
+h1{
+    text-align:center;
+    padding-top:20px;
+
+}
+h4{
+    text-align:center;
+
+}
+form{
+      width:300px;
+      margin-left:20px;
+
+}
+form lable{
+    display:flex;
+    margin-top:20px;
+    font-size:18px;
+}
+form input{
+    background-color:bisque;
+    width:100%;
+    padding:10px;
+    border:none;
+    border:1px solid black;
+    border-radius:6px;
+    outline:none
+    
+}
+input[type="Submit"]{
+
+    width:320px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color:#49c1a2;
+    color:white;
+    font-size:20px;
+}
+.privacy{
+
+    text-align:center;
+    padding-top:20px;
+    font-size:15px;
+
+
+}

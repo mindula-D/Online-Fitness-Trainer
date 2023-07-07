@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/blog review.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <title>GetYourTrainer.com</title>
+</head>
+<body>
+    <div id="review">
+        <h1 id="heading">LEAVE A REPLY</h1>
+        <h3 id="paratext">Comment</h3>
+        <form id="text1" name="text1" method="post" action="blog.php">
+            <textarea name="message" rows="10" cols="100" id="box" placeholder="Enter Your Review Here..."></textarea><br>
+            <h3 id="paratext">Membership ID</h3>
+            <input type="text" name="id" id="id" placeholder="Enter your membership ID here"><br>
+            <h3 id="paratext">Artical ID</h3>
+            <input type="text" name="aid" id="aid" placeholder="Enter artical ID here">
+            <div id="rad1" name="rad1">
+                <div id="inputs">
+                    <input type="radio" name="rate111" value="5 Points" id="rate11">
+                    <label for="rate11" class="fa fa-star fa-2x"></label>
+                    <input type="radio" name="rate111" value="4 Points" id="rate12">
+                    <label for="rate12" class="fa fa-star fa-2x"></label>
+                    <input type="radio" name="rate111" value="3 Points" id="rate13">
+                    <label for="rate13" class="fa fa-star fa-2x"></label>
+                    <input type="radio" name="rate111" value="2 Points" id="rate14">
+                    <label for="rate14" class="fa fa-star fa-2x"></label>
+                    <input type="radio" name="rate111" value="1 Points" id="rate15">
+                    <label for="rate15" class="fa fa-star fa-2x"></label>
+                </div>
+            </div>
+            <input type="submit" value="Submit" id="button1" onclick="function1()">
+        </form>
+        <div id="read1">
+            <a href="Blog 1.html" class="btn home_Btn">
+                <span class="btn_icon"><ion-icon name="home"></ion-icon></span>
+            </a>
+        </div>
+    </body>
+    <script src="js/blog review.js"></script> 
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>   
+</html>

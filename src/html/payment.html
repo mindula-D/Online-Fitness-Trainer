@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/payment.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <title>GetYourTrainer.com</title>
+
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo2.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trainers.html">Our Trainers</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" class="srch" placeholder="Search here..">
+            <a href="#"><button class="srch_btn"><i class="fa fa-search" aria-hidden="true"></i></button></a>
+        </div>
+        <a href="register.html" class="sign"><button>Sign In</button></a>
+    </header>
+        <h1 id="heading">Enter your payment details</h1>
+        <div id="all">
+            <div id="left">
+                <form id="form1" name="form1" method="post" action="payment.php">
+                    <input type="text" name="fname" id="fname" placeholder="Enter First Name">
+                    <input type="text" name="lname" id="lname" placeholder="Enter Last Name"><br>
+                    <input type="text" name="cnum" id="cnum" placeholder=" Card Number"><br>
+                    <input type="text" name="idnum" id="idnum" placeholder="ID Number"><br>
+                    <input type="text" name="cvv" id="cvv" placeholder="CVV"><br>
+                    <input type="month" name="date" id="date" placeholder="MM / YY"><br>
+                    <div id="package">
+                        <p id="form">Select Your Package & Term</p><br>
+                        <input type="radio" name="basic" id="basic" value="Basic" onclick="change1()">
+                        <label for="basic" class="basic" id="changes1">Basic</label>
+                        <input type="radio" name="basic" id="pre" value="Premium" onclick="change2()">
+                        <label for="pre" class="premium" id="changes2">Premium</label>
+                        <input type="radio" name="basic" id="opt" value="Optimum" onclick="change3()">
+                        <label for="opt" class="optimum" id="changes3">Optimum</label>
+                        
+                    </div>
+                    <div id="term">
+                        <br><br><br>
+                        <input type="radio" name="one" id="one" value="1 Month" onclick="change4()">
+                        <label for="one" class="first" id="changes4">Pay For 1 Month</label>
+                        <input type="radio" name="one" id="six" value="6 Month" onclick="change5()">
+                        <label for="six" class="second" id="changes5">Pay For 6 Month</label>
+                        <input type="radio" name="one" id="year" value="1 Year" onclick="change6()">
+                        <label for="year" class="third" id="changes6">Pay For 1 Year</label>
+                        
+                    </div>
+                
+                <div id="bill" onclick="billing()">Print the Bill</div>
+            </div>
+            <div id="right">
+                <p id="topic">Online Fitness Trainer<br><br>Bill</p>
+                <div id="showbill">
+                    <br><p id="namet">Name</p>
+                    <p id="namep">Empty</p><br>
+                    <br><p id="idt">ID Number</p>
+                    <p id="idp">Empty</p><br>
+                    <br><p id="packaget">Package</p>
+                    <p id="packagep">Empty</p><br>
+                    <br><p id="termt">Term</p>
+                    <p id="termp">Empty</p><br>
+                    <p id="tot">TOTAL</p>
+                    <p id="value">$ 00.00</p>
+                </div>
+                <div id="capcha">
+                    <input type="checkbox" name="confirm1" value="done">
+                    <label for="confirm1">I am agree to the terms and the Privacy and policy</label>
+                </div>
+                <input type="submit" id="pay" value="Pay">
+            </div>  
+            </form> 
+
+        </div>
+    <footer>
+    <div class="container">
+        <div class="aboutus">
+            <h2>About Us</h2><br>
+            <p>GetYourTrainer™ is an online personal training company with a primary focus on strength training.<br><br>
+                GetYourTrainer™  offers a no-nonsense, results-driven approach to working out. GetYourTrainer™ programming and nutrition advice has helped thousands of clients across the world not only transform their bodies, but also see how the benefits of getting stronger can have an impact on every area of their lives.</p>
+            <img src="images/social.png" alt="socialmedia" class="social">
+        </div>
+        <div class="contactus" style="color: #f5cf55;">
+            <h2>Contact Us</h2><br>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                    <span>No.29/15,Visakha Private Road,Colombo-04.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <p><a href="+94112300663" style="color: #f5cf55;">+94 112 300 633</a><br><a href="+94769015555" style="color: #f5cf55;">+94 796 015 555</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mail" style="color: #f5cf55;">getyourtrainer@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="contactus">
+            <h2>Contact Us</h2><br>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                    <span>No.29/15,Visakha Private Road,Colombo-04.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <p><a href="+94112300663">+94 112 300 633</a><br><a href="+94769015555">+94 796 015 555</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mail">getyourtrainer@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    
+    <div class="copyright">
+        <p>Copyright © 2022 GetYouTrainer™ Inc. All Rights Reserved.</p>
+    </div>
+    <script type="text/javascript" src="js/payment.js"></script>
+</body>
+    
+</html>

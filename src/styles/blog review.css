@@ -1,0 +1,105 @@
+body{
+background-image: url("../images/man-training-gym_186382-6549.png");
+    background-size:cover;
+}
+#review{
+    min-width: 60%;
+    background-color: rgb(255, 255, 255);
+    opacity: 0.8;
+    margin-left: 300px;
+    margin-bottom: 20px;
+    margin-right: 300px;
+    margin-top: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+    min-height: 700px;
+    border-radius: 15px;
+}
+#heading{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+#box{
+    
+    margin-left: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+#id, #aid{
+    
+    margin-left: 40px;
+    height: 40px;
+    width: 750px;
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+}
+#paratext{
+    margin-left: 40px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0);
+}
+#rad1{
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#rad1 input{
+    display: none;
+}
+#rad1 label{
+    opacity: 0.9;
+    display: flex;
+    flex-direction: row-reverse;
+    float: right;
+}
+#inputs{
+    margin-right: 620px;
+}
+#button1{
+    margin-left: 40px;
+    margin-top: 30px;
+    height: 40px;
+    width: 100px;
+    border-color: black;
+    border-width: 2px;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+}
+#read1{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+#rad1 input:not(:checked) ~ label:hover,
+#rad1 input:not(:checked) ~ label:hover ~ label{
+    color: #f5cf55;
+    transition: all 0.4s ease 0s;
+}
+#rad1 input:checked ~ label{
+    color: #f5cf55;
+    transition: all 0.4s ease 0s;
+}
+#rad1 input#rate11:checked ~ label{
+    color: #f5cf55;
+}
+#button1:hover{
+    background-color: #f5cf55;
+    transition: all 0.4s ease 0s;
+}
+.btn {
+	margin-top: 530px;
+	padding-left: 30px;
+	font-size: 40px;
+	color: black;
+	transition: transform 0.3s;
+}
+
+.btn:hover {
+	color: #f5cf55;
+	transform: scale(1.2);
+}

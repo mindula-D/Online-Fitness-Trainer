@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link stylesheets -->
+    <link rel="stylesheet" href="styles/Header & Footer.css">
+    <link rel="stylesheet" href="styles/pricing.css">
+    <link rel="stylesheet" href="styles/all.min.css">
+    <title>GetYourTrainer.com</title>
+</head>
+<body>
+    <!-- This is the navigation bar -->
+    <header>
+        <img class="logo" src="./images/logo2.png" alt="logo">
+        <nav>
+            <ul class="nav_links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="trainers.html">Our Trainers</a></li>
+                <li><a href="Blog 1.html">Blog</a></li>
+                <li><a class="current" href="pricing.html">Pricing</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="search" class="srch" placeholder="Search here..">
+            <a href="#"><button class="srch_btn"><i class="fa fa-search" aria-hidden="true"></i></button></a>
+        </div>
+        <a href="register.html" class="sign"><button>Sign In</button></a>
+    </header>
+    <main>
+    <hr>
+    <!-- Payment plans -->
+    <h1 class="pricing_head">Choose a plan that's right for you</h1>
+    <div class="pricing_container">
+        <section class = "pricing">
+            <div class="pricing_header">
+                <h1 class="pricing_title">BASIC</h1>
+                <h2 class="pricing_summary">For those getting started</h2>
+            </div>
+            <div class="pricing_description">
+                <ul class="pricing_list">
+                    <li class="pricing_feature">Basic body transformation.</li>
+                    <li class="pricing_feature">Light weight exercises.</li>
+                    <li class="pricing_feature">Basic personal analysis.</li>
+                </ul>
+            </div>
+            <div class="pricing_actions">
+                <p class="pricing_cost">$25</p>
+                <p class="pricing_text">per month</p>
+                <a class="pricing_button" id="changes1" onclick="change1()">Choose</a>
+                <p class="pricing_text">Minimum spend $300 over 12 months</p>
+            </div>
+        </section>
+        <section class = "pricing">
+            <div class="pricing_header">
+                <h1 class="pricing_title">PREMIUM</h1>
+                <h2 class="pricing_summary">For those with some experience</h2>
+            </div>
+            <div class="pricing_description">
+                <ul class="pricing_list">
+                    <li class="pricing_feature">Medium body transformation.</li>
+                    <li class="pricing_feature">Excessive exercises.</li>
+                    <li class="pricing_feature">Full body analysis.</li>
+                </ul>
+            </div>
+            <div class="pricing_actions">
+                <p class="pricing_cost">$45</p>
+                <p class="pricing_text">per month</p>
+                <a class="pricing_button" id="changes2" onclick="change2()">Choose</a>
+                <p class="pricing_text">Minimum spend $540 over 12 months</p>
+            </div>
+        </section>
+        <section class = "pricing">
+            <div class="pricing_header">
+                <h1 class="pricing_title">OPTIMUM</h1>
+                <h2 class="pricing_summary">For bodybuilders</h2>
+            </div>
+            <div class="pricing_description">
+                <ul class="pricing_list">
+                    <li class="pricing_feature">Advanced body transformation.</li>
+                    <li class="pricing_feature">Pro level exercises</li>
+                    <li class="pricing_feature">Personal body analysis.</li>
+                </ul>
+            </div>
+            <div class="pricing_actions">
+                <p class="pricing_cost">$50</p>
+                <p class="pricing_text">per month</p>
+                <a class="pricing_button" id="changes3" onclick="change3()">Choose</a>
+                <p class="pricing_text">Minimum spend $600 over 12 months</p>
+            </div>
+        </section>
+    </div>
+    <!-- Additional features -->
+    <section class="additional">
+        <ul>
+        <h1>Additional Features</h1>
+        <form id="form1" name="form1">
+            <div id="package">
+                <lable class="checkbox" for="myCheckboxId">
+                    <input type="checkbox" class="checkbox_input" name="myCheckboxName1" id="Equipment" value="Equipment" onclick="additionalBilling1()">
+                    <div class="checkbox_box">Equipments<br><p>GetYouTrainer™ offers a wide variety of home and commercial gym equipment, which includes treadmills, dumbbells, barbells, weight benches, squat racks, other exercise accessories and more.</p></div>
+                </lable>
+                <lable class="checkbox" for="myCheckboxId">
+                    <input type="checkbox" class="checkbox_input" name="myCheckboxName2" id="Supplement" value="Supplement" onclick="additionalBilling2()">
+                    <div class="checkbox_box">Food Supplements<br><p>Food supplement refers to a preparation that is intended to supply a nutrient that is missing from a diet. You can buy world's best food supplements from GetYouTrainer™.</p></div>
+                </lable>
+                <lable class="checkbox" for="myCheckboxId">
+                    <input type="checkbox" class="checkbox_input" name="myCheckboxName3" id="Doctor" value="Doctor" onclick="additionalBilling3()">
+                    <div class="checkbox_box">Channel a Doctor<br><p>We have the best doctors in Sri Lanka. You can channel it from someone. You can channel one of them.</p></div>
+                </lable>
+             </div>
+        </form>
+        </ul>
+        <!-- Total of aditional features -->
+        <div class="total">
+            <h1>Total Amount of Additional Features</h1>
+            <p class="value" id="value">$ 00.00</p>
+            <a href="payment.html" class="proceed">Pay Now</a>
+
+        </div>
+    </section>
+    </main>
+    <!-- This is the footer -->
+    <footer>
+        <hr>
+    <div class="container">
+        <div class="aboutus">
+            <h2>About Us</h2><br>
+            <p>GetYourTrainer™ is an online personal training company with a primary focus on strength training.<br><br>
+                GetYourTrainer™  offers a no-nonsense, results-driven approach to working out. GetYourTrainer™ programming and nutrition advice has helped thousands of clients across the world not only transform their bodies, but also see how the benefits of getting stronger can have an impact on every area of their lives.</p>
+            <img src="./images/social.png" alt="socialmedia" class="social">
+        </div>
+        <div class="contactus" style="color: #f5cf55;">
+            <h2>Contact Us</h2><br>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                    <span>No.29/15,Visakha Private Road,Colombo-04.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <p><a href="+94112300663" style="color: #f5cf55;">+94 112 300 633</a><br><a href="+94769015555" style="color: #f5cf55;">+94 796 015 555</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mail" style="color: #f5cf55;">getyourtrainer@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="contactus">
+            <h2>Contact Us</h2><br>
+            <ul class="info">
+                <li>
+                    <span><i class="fa fa-address-card" aria-hidden="true"></i></span>
+                    <span>No.29/15,Visakha Private Road,Colombo-04.</span>
+                </li>
+                <li>
+                    <span><i class="fa fa-phone-square" aria-hidden="true"></i></span>
+                    <p><a href="+94112300663">+94 112 300 633</a><br><a href="+94769015555">+94 796 015 555</a></p>
+                </li>
+                <li>
+                    <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                    <p><a href="mail">getyourtrainer@gmail.com</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </footer>
+    
+    <div class="copyright">
+        <p>Copyright © 2022 GetYouTrainer™ Inc. All Rights Reserved.</p>
+    </div>
+    <script type="text/javascript" src="./js/pricing.js"></script>
+    
+    
+</html>
